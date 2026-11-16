@@ -1,0 +1,21 @@
+.{
+    .name = .openssl,
+    .version = "0.0.1",
+    .dependencies = .{
+        .upstream = .{
+            .url = "https://github.com/openssl/openssl/releases/download/openssl-3.6.5/openssl-3.6.5.tar.gz",
+            .hash = "N-V-__8AABKeEghjdSPkvVWHCc8hob18MH3oUBR-e5mVm9TJ",
+        },
+        .zlib = .{
+            .url = "git+https://github.com/allyourcodebase/zlib.git#d3b5519d3b73616a6bfece0712f080029d2a9244",
+            .hash = "zlib-1.3.2-ZZQ7lc8NAAAHm9MDfplvwoesXvk4tVm6VCsiI8KnIbT0",
+        },
+    },
+    .minimum_zig_version = "0.17.1",
+    .paths = .{
+        "generated",
+        "build.zig",
+        "build.zig.zon",
+    },
+    .fingerprint = 0x773a47f1f4afa898,
+}
